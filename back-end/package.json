@@ -1,0 +1,11 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "Back-end for Calibur: Collegiate Esports Directory",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Harris Rothaermel",
+  "license": "ISC"
+}
