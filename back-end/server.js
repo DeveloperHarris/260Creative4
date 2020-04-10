@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 
 const app = express();
 
+app.use(express.static("dist"));
+
 app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
@@ -38,4 +40,4 @@ app.use("/api/users", users.routes);
 const colleges = require("./colleges.js");
 app.use("/api/colleges", colleges.routes);
 
-app.listen(3001, () => console.log("Server listening on port 3001!"));
+app.listen(3000, () => console.log("Server listening on port 3000!"));

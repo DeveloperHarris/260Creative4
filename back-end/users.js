@@ -14,6 +14,7 @@ const userSchema = new mongoose.Schema({
   firstName: String,
   lastName: String,
   username: String,
+  email: String,
   password: String,
 });
 
@@ -128,6 +129,7 @@ router.post("/", async (req, res) => {
     const user = new User({
       firstName: req.body.firstName,
       lastName: req.body.lastName,
+      email: req.body.email,
       username: req.body.username,
       password: req.body.password,
     });
